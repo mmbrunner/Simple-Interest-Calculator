@@ -15,7 +15,7 @@ function compute()
 
     //variable called amount & assigned to formula for simple interest?
     var amount = principal * (1+rate*years)
-    //when the button is clicked, set the result <span> to the appropriate text
+    //when the button is clicked, set the result <span> to the appropriate text and highlight the values
     document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+"%</mark>\<br\>You will receive an amount of <mark>"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>";
 
 }
