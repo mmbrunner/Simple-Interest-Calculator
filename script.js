@@ -36,4 +36,10 @@ function validatePrincipal()
         principal.focus();
         return false;
     }
+    //if the principal is blank
+    if (x == "") {
+        alert("Enter a Positive Number");
+        principal.focus();
+        return false;
+    }
 }
