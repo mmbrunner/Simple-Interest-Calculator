@@ -12,12 +12,10 @@ function compute()
     var interest = principal * years * rate /100;
     //logic to convert the No of Years into the actual year in the future
     var year = new Date().getFullYear()+parseInt(years);
-
     //variable called amount & assigned to formula for simple interest?
     var amount = principal * (1+rate*years)
     //when the button is clicked, set the result <span> to the appropriate text and highlight the values
     document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+"%</mark>\<br\>You will receive an amount of <mark>"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>";
-
 }
 
 function updateRate() 
@@ -28,9 +26,6 @@ function updateRate()
     document.getElementById("rate_val").innerText=rateval;   
     //onchange event on the range input linked to this function
 }
-
-
-//**Things I haven't done yet below
 
 //Add validation for "Principal" input box. If the user enters zero or negative values, show an alert "Enter a positive number"
 
