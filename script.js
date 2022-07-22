@@ -1,6 +1,6 @@
 function compute()
 {
-    //Given
+    //Given?
     p = document.getElementById("principal").value;
     //variable called principal & assigned to input element "principal"
     var principal = document.getElementById("principal").value;
@@ -8,12 +8,10 @@ function compute()
     var rate = document.getElementById("rate").value;
     //variable called years & assigned to input element "years"
     var years = document.getElementById("years").value;
-    //variable called interest & assigned a value of principal * years * rate / 100
-    var interest = principal * years * rate /100;
+    //variable called amount & assigned a value of principal * years * rate
+    var amount = principal * years * rate;
     //logic to convert the No of Years into the actual year in the future
     var year = new Date().getFullYear()+parseInt(years);
-    //variable called amount & assigned to formula for simple interest?
-    var amount = principal * (1+rate*years)
     //when the button is clicked, set the result <span> to the appropriate text and highlight the values
     document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+"%</mark>\<br\>You will receive an amount of <mark>"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>";
 }

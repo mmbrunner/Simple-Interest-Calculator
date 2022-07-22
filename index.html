@@ -11,7 +11,7 @@
 
         Amount <input type="number"  id="principal">  <br/><br/>
         <!-- changed input to range set attributes min to 1, max to 20, step to 0.25, & value to 10.25 -->
-        Rate <input type="range" id="rate" step=0.25 min=1 max=20 value=10.25 onchange="updateRate()" /> <br/><br/>
+        Rate <input type="range" id="rate" step=0.25 min=1 max=20 value=10.25 onchange="updateRate()"> <br/><br/>
         <!-- changed input to select and made values 1-10 as options -->
         No. of Years <select id="years">
             <option value="1">1</option>
@@ -38,7 +38,7 @@
         </div>
     </body>
     <!-- create a copyright message inside the footer tag -->
-    <footer>
+    <footer class="footer">
         &#169; This Calculator belongs to Matt Brunner
     </footer>
 </html>

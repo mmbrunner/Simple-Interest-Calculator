@@ -1,15 +1,29 @@
-body {background-color:black;font-family:arial;color:white}
-h1{color:grey;font-family:verdana}
+/* set body color to black, font to arial, and font color to white */
+body {
+    background-color:black;
+    font-family:arial;
+    color:white
+}
+/* set h1 to grey and font to verdana */
+h1{
+    color:grey;
+    font-family:verdana
+}
+/* set maindiv background to white, text color to black, width to 300px, padding to 20px, border radius to 25px, and align the div to the center of the page */
 .maindiv {
     background-color: white;
     color: black;
     width: 300px;
     padding: 20px;
     border-radius: 25px;
-    vertical-align: center;
+    margin: auto;
 }
-
+/* set mark highlights background to grey and font color to white */
 mark{
-    background-color: gray;
+    background-color: grey;
     color: white;
+}
+/* aligning the copyright center with the maindiv */
+.footer{
+    text-align: center;
 }
