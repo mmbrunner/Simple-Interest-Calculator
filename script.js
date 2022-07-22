@@ -25,8 +25,15 @@ function updateRate()
     //onchange event on the range input linked to this function
 }
 
-//Add validation for "Principal" input box. If the user enters zero or negative values, show an alert "Enter a positive number"
-
-//Once the user clicks on the alert "OK" button, take the user back to the "Principal" input box, by setting the focus on this box
-
-//**Side note: how this is setup (i.e. class names, variables, even the functions) is based on Course-ra's instructions
+function validatePrincipal()
+{
+    //variable called x, assigned to value of principal input element
+    var x = document.getElementById("principal").value;
+    //if the principal is 0 or less alert the user with "Enter a Positive Number"
+    if (x <= 0 ) {
+        alert("Enter a Positive Number");
+    //set focus to principal input box after alert
+        principal.focus();
+        return false;
+    }
+}
