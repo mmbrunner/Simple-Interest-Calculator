@@ -12,8 +12,11 @@ function compute()
     var interest = principal * years * rate /100;
     //logic to convert the No of Years into the actual year in the future
     var year = new Date().getFullYear()+parseInt(years);
+
+    //variable called amount & assigned to formula for simple interest?
+    var amount = principal * (1+rate*years)
     //when the button is clicked, set the result <span> to the appropriate text
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>";
+    document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+"%</mark>\<br\>You will receive an amount of <mark>"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>";
 
 }
 
@@ -27,15 +30,10 @@ function updateRate()
 }
 
 
-//**Things I haven't done yet below (or page 9 & 10 on the instructions)
-
-//Make sure that the input you have taken as "No of Years" is converted into an actual year.
-
-//Make sure the numbers in the result are highlighted.
+//**Things I haven't done yet below
 
 //Add validation for "Principal" input box. If the user enters zero or negative values, show an alert "Enter a positive number"
 
 //Once the user clicks on the alert "OK" button, take the user back to the "Principal" input box, by setting the focus on this box
-
 
 //**Side note: how this is setup (i.e. class names, variables, even the functions) is based on Course-ra's instructions
